@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+    @apply border-theme bg-theme dark:border-theme-dark dark:bg-theme-dark;
+}
+
+
+
+.nav-dot:hover span {
+    opacity: 1;
+}
