@@ -12,7 +12,7 @@ export default {
         nav: "#E0E0E0",
         "nav-tip-bg": "#E0E0E0",
         "nav-tip-text": "#333333",
-        secondary: "#DDDDDD",
+        secondary: "#444444",
         badge: "#C0C0C0",
         "input-border": "#CCCCCC",
         input: "#F0F0F0",
