@@ -1,3 +1,6 @@
+import ProjectCard from "./ProjectCard";
+import { projects } from "../data/projectsData";
+
 const Projects = () => {
   return (
     <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -16,7 +19,7 @@ const Projects = () => {
           projects, seamlessly blending front-end and back-end technologies.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           <img
             className="w-full bg-nav h-36 lg:h-72 object-cover"
             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
@@ -53,6 +56,29 @@ const Projects = () => {
             className="w-full hidden md:block md:col-span-2 lg:col-span-1 bg-nav h-36 lg:h-72 object-cover"
             src="https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"
           />
+        </div> */}
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-6">
+          {/* <ProjectCard
+            image="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            title="Meme Generator"
+            description="React JS"
+          />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard image="" title="" />
+          <ProjectCard
+            image=""
+            title=""
+            spanClasses="md:col-span-2 lg:col-span-1"
+          /> */}
+
+          {projects.map((project) => (
+            <ProjectCard key={project.id} {...project} />
+          ))}
         </div>
       </section>
     </div>
