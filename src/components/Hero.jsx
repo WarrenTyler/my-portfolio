@@ -6,47 +6,47 @@ const Hero = () => {
           <div className="absolute left-[50%] transform -translate-x-1/2 space-y-6 mt-36">
             <a
               href="#"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark selected-circle dark:selected-circle"
+              className="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark selected-circle dark:selected-circle"
             >
-              <span class="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
+              <span className="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
                 Home
               </span>
             </a>
             <a
               href="#work"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
+              className="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
             >
-              <span class="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
+              <span className="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
                 Work
               </span>
             </a>
             <a
               href="#clients"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
+              className="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
             >
-              <span class="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
+              <span className="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
                 Clients
               </span>
             </a>
             <a
               href="#hire"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
+              className="nav-dot block w-7 h-7 rounded-full border-4 border-nav dark:border-nav-dark"
             >
-              <span class="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
+              <span className="bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0">
                 Hire
               </span>
             </a>
           </div>
         </nav>
         {/* Hero content */}
-        <div class="relative flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
+        <div className="relative flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36">
           <div className="z-50">
-            <h1 class="font-bold text-black dark:text-white text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
+            <h1 className="font-bold text-black dark:text-white text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
               Building
               <br /> beautiful web experiences.
             </h1>
-            <div class="w-full flex justify-center md:justify-start">
-              <button class="px-8 py-4 bg-theme text-white dark:bg-theme-dark font-bold mt-12 flex items-center space-x-3">
+            <div className="w-full flex justify-center md:justify-start">
+              <button className="px-8 py-4 bg-theme text-white dark:bg-theme-dark font-bold mt-12 flex items-center space-x-3">
                 <svg
                   viewBox="0 0 1000 1000"
                   fill="currentColor"
