@@ -1,3 +1,5 @@
+import { IoMenu } from "react-icons/io5";
+
 const Header = () => {
   return (
     <header className="py-6">
@@ -19,22 +21,7 @@ const Header = () => {
           </a>
         </nav>
         <div className="md:hidden">
-          <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 16 12"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 1h14M1 6h14M1 11h7"
-            />
-          </svg>
-          
+          <IoMenu size="2rem" className="text-gray-800 dark:text-white" />
         </div>
       </div>
     </header>
