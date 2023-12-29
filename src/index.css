@@ -1,27 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.nav-dot {
-    transition: background 200ms, border-color 200ms;
+html,
+body {
+  scroll-behavior: smooth;
 }
 
-.selected-circle {
-    @apply border-theme bg-theme dark:border-theme-dark dark:bg-theme-dark;
+.header__link--selected {
+  @apply text-selected-text dark:text-selected-text-dark;
 }
 
-.nav-dot:hover span {
-    opacity: 1;
+.side-nav__link {
+  @apply block lg:w-7 lg:h-7 2xl:w-9 2xl:h-9 rounded-full;
 }
 
-.secondary-title {
-    @apply text-3xl font-bold;
+.side-nav__link--selected {
+  @apply bg-theme dark:bg-theme-dark;
 }
 
-.secondary-title::before {
-    @apply content-[''] block w-12 h-2 bg-theme dark:bg-theme-dark rounded-full mb-1;
+.side-nav__link--not-selected {
+  @apply border-4 border-nav dark:border-nav-dark;
 }
 
-.section-paragraph {
-    @apply text-secondary dark:text-secondary-dark my-6 w-full max-w-3xl;
+.side-nav__tooltip {
+  @apply bg-nav-tip-bg text-nav-tip-text dark:bg-nav-tip-bg-dark dark:text-nav-tip-text-dark px-2 py-1 rounded-md ml-10 opacity-0;
+}
+
+.side-nav__link:hover .side-nav__tooltip {
+  @apply opacity-100 z-10;
+}
+
+.section__layout {
+  @apply px-8 md:px-24 lg:px-36 md:pb-64 lg:pb-96 container flex justify-between items-center mx-auto w-full;
+}
+
+.section__title {
+  @apply text-3xl lg:text-5xl font-bold pt-32;
+}
+
+.section__title::before {
+  @apply content-[''] block w-12 lg:w-16 h-2 bg-theme dark:bg-theme-dark rounded-full mb-1;
+}
+
+.section__paragraph {
+  @apply text-secondary dark:text-secondary-dark my-6 w-full max-w-5xl lg:text-xl;
+}
+
+.skill__div {
+  @apply relative text-sm md:text-lg max-w-[300px] m-[0.2rem] mt-[1rem] p-[0.8rem] rounded-[0.2rem] basis-[30%] grow;
+}
+
+.skill__div:hover {
+  @apply shadow-lg dark:shadow-[rgba(67,67,67,0.3)];
+}
+
+.skill__logo {
+  @apply w-20 h-20 lg:w-32 lg:h-32 block max-h-32 my-[0.3rem] md:my-[0.5rem] mx-auto transition-all ease-in-out duration-150 fill-theme dark:fill-theme-dark;
+}
+
+.skill__div:hover .skill__logo {
+  @apply transform scale-110 filter drop-shadow-[2px_4px_2px_rgba(0,0,0,0.3)] dark:drop-shadow-[2px_4px_2px_rgba(128,128,128,0.2)];
 }
