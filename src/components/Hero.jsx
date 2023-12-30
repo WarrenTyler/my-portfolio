@@ -37,7 +37,12 @@ const Hero = ({ theme }) => {
               <h1 className="col-span-5">Developer.</h1>
               <div className="col-span-6 text-xl flex justify-center items-center">
                 <div className="flex justify-center md:justify-start">
-                  <button className="px-8 py-4 bg-theme text-white dark:bg-theme-dark font-bold mt-12 flex items-center space-x-3">
+                  <button
+                    className="px-8 py-4 bg-theme text-white dark:bg-theme-dark font-bold mt-12 flex items-center space-x-3"
+                    onClick={() => {
+                      window.location.href = "#projects";
+                    }}
+                  >
                     <IoIosEye size="1.7em" />
                     <span>View my projects.</span>
                   </button>
