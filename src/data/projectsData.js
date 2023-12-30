@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 export const projects = [
   {
     id: uuidv4(),
-    image: "./src/images/meme-generator.png",
+    image: "./images/projects/meme-generator.png",
     title: "Meme Generator",
     description:
       "Create hilarious memes on the fly, customize with flair, and share the laughter.",
@@ -12,7 +12,7 @@ export const projects = [
   },
   {
     id: uuidv4(),
-    image: "./src/images/aivisio.jpg",
+    image: "./images/projects/aivisio.jpg",
     title: "AiVisio",
     description:
       "Generates unique images from text descriptions and allows users to save and share online.",
@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: uuidv4(),
-    image: "./src/images/weather-dashboard.jpg",
+    image: "./images/projects/weather-dashboard.jpg",
     title: "Weather Dashboard",
     description:
       "A JavaScript web application that uses a 5 Day Weather Forecast API to retrieve and store weather data for cities.",
@@ -30,7 +30,7 @@ export const projects = [
   },
   {
     id: uuidv4(),
-    image: "./src/images/work-day-scheduler.jpg",
+    image: "./images/projects/work-day-scheduler.jpg",
     title: "Work Day Scheduler",
     description:
       "A JavaScript web application that allows users to save events for 9:00-17:00 work hours of the day.",
@@ -39,7 +39,7 @@ export const projects = [
   },
   {
     id: uuidv4(),
-    image: "./src/images/team-generator.jpg",
+    image: "./images/projects/team-generator.jpg",
     title: "Team Profile Generator",
     description:
       "Generates an HTML web page of employee summaries from command-line input of team data.",

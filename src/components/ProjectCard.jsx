@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const ProjectCard = ({ image, title, description, view, github }) => {
   return (
     <div className="md:basis-1/2 xl:basis-1/3 relative flex justify-center items-center w-full">
-      <div className="h-auto w-full mx-2 my-2 shadow-lg shadow-gray-400 dark:shadow-none rounded-xl group hover:bg-gradient-to-r from-gray-200 to-theme dark:to-theme-dark">
+      <div className="h-auto w-full md:mx-2 my-2 shadow-lg shadow-gray-400 dark:shadow-none rounded-xl group hover:bg-gradient-to-r from-gray-200 to-theme dark:to-theme-dark">
         <img
           className="rounded-xl group-hover:opacity-10 max-h-72 lg:max-h-none w-full object-cover"
           src={image}

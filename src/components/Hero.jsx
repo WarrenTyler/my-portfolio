@@ -8,27 +8,27 @@ const Hero = ({ theme }) => {
         <source
           srcSet={
             theme === "dark"
-              ? "./src/images/hero-landscape-dark.jpg"
-              : "./src/images/hero-landscape-light.jpg"
+              ? "./images/hero/hero-landscape-dark.jpg"
+              : "./images/hero/hero-landscape-light.jpg"
           }
           media="(min-width: 768px)"
         />
         <img
           src={
             theme === "dark"
-              ? "./src/images/hero-portrait-dark.jpg"
-              : "./src/images/hero-portrait-light.jpg"
+              ? "./images/hero/hero-portrait-dark.jpg"
+              : "./images/hero/hero-portrait-light.jpg"
           }
           alt=""
-          className="z-0 md:transform md:scale-x-[-1] h-screen w-full object-cover"
+          className="z-0 h-screen w-full object-cover"
         />
       </picture>
 
-      <section className="z-0 absolute top-[5vh] left-[10vw] md:top-[10vh] md:left-[15vw] xl:top-[12vh] xl:left-[20vw]  container flex justify-between items-center mx-auto">
+      <section className="z-0 absolute top-[5vh] left-[10vw] md:top-[10vh] md:left-[15vw] xl:top-[12vh] xl:left-[20vw] flex justify-between items-center mx-auto">
         <div className="flex flex-wrap md:flex-nowrap">
           {/* Hero content */}
           <div className="flex flex-wrap justify-center max-w-xl md:justify-start md:ml-[5%]">
-            <div className="grid grid-cols-6 gap-x-4 gap-y-3 font-bold text-black dark:text-white text-5xl md:text-6xl lg:text-7xl md:text-left">
+            <div className="grid grid-cols-6 gap-x-4 gap-y-3 font-bold text-black dark:text-white text-5xl md:text-6xl lg:text-7xl">
               <h1 className="col-span-1">A</h1>
               <h1 className="col-span-5">Creative</h1>
               <h1 className="col-span-1 align-middle">+</h1>
