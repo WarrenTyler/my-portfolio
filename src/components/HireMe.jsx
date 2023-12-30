@@ -89,12 +89,7 @@ const HireMe = () => {
         setSubmissionStatus("submitting");
 
         // Use the values from useState to send the form
-        await emailjs.send(
-          serviceId,
-          templateId,
-          formValues,
-          userId
-        );
+        await emailjs.send(serviceId, templateId, formValues, userId);
 
         // Set submission status for the success message
         setSubmissionStatus("success");
@@ -115,17 +110,17 @@ const HireMe = () => {
   };
 
   return (
-    <div className="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    <div className="section__layout">
       <section className="w-full">
-        <h2 id="hire" className="secondary-title">
+        <h2 id="hire" className="section__title">
           Hire me
         </h2>
-        <p className="section-paragraph">
+        <p className="section__paragraph">
           Feel free to contact me anytime through any method below.
         </p>
 
         <div className="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
-          <form className="space-y-12" onSubmit={handleSubmit} noValidate>
+          <form className="space-y-8" onSubmit={handleSubmit} noValidate>
             <div className="relative block">
               <label
                 htmlFor="name"
@@ -215,26 +210,26 @@ const HireMe = () => {
             )}
           </form>
 
-          <div className="mt-12">
-            {/* Socials */}
-            <div className="flex lg:flex-col mt-20 lg:mt-8 lg:ml-16 space-x-6 lg:space-x-0 lg:space-y-4">
-              {/* LinkedIn */}
-              <a
-                href="https://www.linkedin.com/in/warren-tyler-a79a42278/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <BiLogoLinkedinSquare className="w-10 h-10 lg:w-20 lg:h-20 fill-theme dark:fill-theme-dark" />
-              </a>
-              {/* GitHub */}
-              <a
-                href="https://github.com/WarrenTyler"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <BiLogoGithub className="w-10 h-10 lg:w-20 lg:h-20 fill-theme dark:fill-theme-dark" />
-              </a>
-            </div>
+          {/* Socials */}
+          <div className="flex lg:flex-col mt-20 lg:mt-8 lg:ml-16 space-x-6 lg:space-x-0 lg:space-y-4">
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/warren-tyler-a79a42278/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Linkedin account"
+            >
+              <BiLogoLinkedinSquare className="w-10 h-10 lg:w-20 lg:h-20 fill-theme dark:fill-theme-dark" />
+            </a>
+            {/* GitHub */}
+            <a
+              href="https://github.com/WarrenTyler"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Github account"
+            >
+              <BiLogoGithub className="w-10 h-10 lg:w-20 lg:h-20 fill-theme dark:fill-theme-dark" />
+            </a>
           </div>
         </div>
       </section>
