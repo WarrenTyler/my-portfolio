@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 
 const ProjectCard = ({ image, title, description, view, github }) => {
+  const displayView = view && view !== "";
+
   return (
     <div className="md:basis-1/2 xl:basis-1/3 relative flex justify-center items-center w-full">
       <div className="h-auto w-full md:mx-2 my-2 shadow-lg shadow-gray-400 dark:shadow-none rounded-xl group hover:bg-gradient-to-r from-gray-200 to-theme dark:to-theme-dark">
@@ -17,8 +19,13 @@ const ProjectCard = ({ image, title, description, view, github }) => {
             {description}
           </p>
           <div className="flex justify-around">
-            {view !== "" && (
-              <a href={view}>
+            {displayView && (
+              <a
+                href={view}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={title}
+              >
                 <p className="text-center mr-2 px-6 py-2 rounded-lg bg-theme text-white dark:bg-theme-dark font-semibold tracking-wide cursor-pointer">
                   View
                 </p>
@@ -40,7 +47,7 @@ ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  view: PropTypes.string.isRequired,
+  view: PropTypes.string,
   github: PropTypes.string.isRequired,
 };
 
