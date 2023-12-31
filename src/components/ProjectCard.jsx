@@ -24,14 +24,19 @@ const ProjectCard = ({ image, title, description, view, github }) => {
                 href={view}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={title}
+                aria-label={`${title} repository`}
               >
                 <p className="text-center mr-2 px-6 py-2 rounded-lg bg-theme text-white dark:bg-theme-dark font-semibold tracking-wide cursor-pointer">
                   View
                 </p>
               </a>
             )}
-            <a href={github}>
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} repository`}
+            >
               <p className="text-center px-6 py-2 rounded-lg bg-theme text-white dark:bg-theme-dark font-bold tracking-wide cursor-pointer">
                 GitHub
               </p>
