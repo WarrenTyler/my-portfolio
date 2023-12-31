@@ -29,6 +29,7 @@ const Header = ({ theme, toggleTheme }) => {
           <nav className="hidden md:flex items-center space-x-12">
             <a
               href="#"
+              aria-label="Home"
               className={`${
                 activeSection === "home" ? "header__link--selected" : ""
               }`}
@@ -38,6 +39,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#about"
+              aria-label="About"
               className={`${
                 activeSection === "about" ? "header__link--selected" : ""
               }`}
@@ -47,6 +49,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#projects"
+              aria-label="Projects"
               className={`${
                 activeSection === "projects" ? "header__link--selected" : ""
               }`}
@@ -56,6 +59,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#skills"
+              aria-label="Skills"
               className={`${
                 activeSection === "skills" ? "header__link--selected" : ""
               }`}
@@ -63,7 +67,11 @@ const Header = ({ theme, toggleTheme }) => {
             >
               My skills
             </a>
-            <a href="#hire" onClick={() => handleClick("hire")}>
+            <a
+              href="#hire"
+              aria-label="Hire"
+              onClick={() => handleClick("hire")}
+            >
               <button
                 className={`${
                   activeSection === "hire"
@@ -106,6 +114,7 @@ const Header = ({ theme, toggleTheme }) => {
           <nav className="flex flex-col justify-around space-y-8">
             <a
               href="#"
+              aria-label="Home"
               className={`${
                 activeSection === "home" ? "header__link--selected" : ""
               }`}
@@ -115,6 +124,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#about"
+              aria-label="About"
               className={`${
                 activeSection === "about" ? "header__link--selected" : ""
               }`}
@@ -124,6 +134,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#projects"
+              aria-label="Projects"
               className={`${
                 activeSection === "projects" ? "header__link--selected" : ""
               }`}
@@ -133,6 +144,7 @@ const Header = ({ theme, toggleTheme }) => {
             </a>
             <a
               href="#skills"
+              aria-label="Skills"
               className={`${
                 activeSection === "skills" ? "header__link--selected" : ""
               }`}
@@ -140,7 +152,11 @@ const Header = ({ theme, toggleTheme }) => {
             >
               My skills
             </a>
-            <a href="#hire" onClick={() => handleClick("hire")}>
+            <a
+              href="#hire"
+              aria-label="Hire"
+              onClick={() => handleClick("hire")}
+            >
               <button
                 className={`${
                   activeSection === "hire"

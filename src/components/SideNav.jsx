@@ -12,6 +12,7 @@ const SideNav = () => {
       <div className="absolute space-y-6 mt-36">
         <a
           href="#"
+          aria-label="Home"
           className={`side-nav__link ${
             activeSection === "home"
               ? "side-nav__link--selected"
@@ -23,6 +24,7 @@ const SideNav = () => {
         </a>
         <a
           href="#about"
+          aria-label="About"
           className={`side-nav__link ${
             activeSection === "about"
               ? "side-nav__link--selected"
@@ -34,6 +36,7 @@ const SideNav = () => {
         </a>
         <a
           href="#projects"
+          aria-label="Projects"
           className={`side-nav__link ${
             activeSection === "projects"
               ? "side-nav__link--selected"
@@ -45,6 +48,7 @@ const SideNav = () => {
         </a>
         <a
           href="#skills"
+          aria-label="Skills"
           className={`side-nav__link ${
             activeSection === "skills"
               ? "side-nav__link--selected"
@@ -56,6 +60,7 @@ const SideNav = () => {
         </a>
         <a
           href="#hire"
+          aria-label="Hire"
           className={`side-nav__link ${
             activeSection === "hire"
               ? "side-nav__link--selected"
